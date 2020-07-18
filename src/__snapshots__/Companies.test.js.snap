@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <section
+      class="col-md-10"
+    >
+      <div
+        class="card"
+      >
+        <div
+          class="card-body"
+        >
+          <form>
+            <p>
+              <input
+                id="search"
+                name="search"
+                placeholder="Enter Search Term.."
+                value=""
+              />
+            </p>
+            <button
+              class="btn btn-primary"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+  <p
+    class="lead"
+  >
+    Sorry, no results were found!
+  </p>
+</DocumentFragment>
+`;
