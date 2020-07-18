@@ -28,7 +28,7 @@ function CompanyDetailCard() {
     // calls the async func
     getItems();
     },
-[currentUser.jobs, id]);
+[jobsCurrent, id]);
 async function apply(idx){
     let jobId = jobs[idx].id;
     let message = await JoblyApi.jobApply(jobId);
