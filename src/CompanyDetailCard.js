@@ -11,8 +11,8 @@ function CompanyDetailCard() {
     const [jobs, setJobs] = useState([]);
     const { currentUser } = useContext(UserContext);
     const {id} = useParams()
+    const jobsCurrent = currentUser.jobs; 
     useEffect(() => {
-        const jobsCurrent = currentUser.jobs; 
     async function getItems(){
         const resp = await JoblyApi.getCompany(id)
         console.log(resp)
@@ -31,10 +31,10 @@ function CompanyDetailCard() {
 [currentUser.jobs, id]);
 async function apply(idx){
     let jobId = jobs[idx].id;
-    await JoblyApi.jobApply(jobId);
-    // setJobs(j => j.map(job => 
-    //     job.id === jobId ? { ...job, state: message} : job
-    //   ));
+    let message = await JoblyApi.jobApply(jobId);
+    setJobs(j => j.map(job => 
+        job.id === jobId ? { ...job, state: message} : job
+      ));
 }
   
     return (
