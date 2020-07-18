@@ -1,5 +1,4 @@
 import React,{useEffect, useState} from 'react';
-import CompanyCard from './CompanyCard'
 import './CompanyCard.css';
 import SearchForm from './SearchForm';
 import JoblyApi from './JoblyApi'

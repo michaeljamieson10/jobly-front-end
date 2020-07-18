@@ -1,5 +1,4 @@
 import { useState } from "react";
-import axios from "axios";
 import JoblyApi from "../JoblyApi"
 function ChangeArrayFunc(BASE_URL, name) {
     const [array, setArray] = useState([]);

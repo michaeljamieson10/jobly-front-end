@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 import {Link} from 'react-router-dom';
 import UserContext from "./UserContext";
 function Home() {
-  const { currentUser, setCurrentUser } = useContext(UserContext);
+  const { currentUser } = useContext(UserContext);
     return (
         <div className="pt-5">
         <div className="container text-center">

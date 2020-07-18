@@ -10,7 +10,7 @@ function CompanyCard({item = {} }) {
                         <span className="text-capitalize">
                             {name}
                         </span>
-                    <img width="25%" src={logo_url}/></h6>
+                    <img alt="" width="25%" src={logo_url}/></h6>
                     <p>{description}</p>
                 </div>
             </Link>

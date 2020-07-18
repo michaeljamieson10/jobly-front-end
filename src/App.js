@@ -1,8 +1,7 @@
 import React,{useEffect, useState} from 'react';
 import JoblyApi from './JoblyApi'
-import ChangeArrayFunc from './hooks/changeArrayFunc.js'
 import NavBar from './NavBar';
-import { Route, Switch, Redirect, BrowserRouter } from "react-router-dom";
+import { Route, Switch, BrowserRouter } from "react-router-dom";
 import Home from './Home';
 import Profile from './Profile';
 import Companies from './Companies';
